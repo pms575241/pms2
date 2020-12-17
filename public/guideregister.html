@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Guide Registration</title>
+	<style>
+		body
+		{
+			text-align: center;
+			background-image: linear-gradient(to bottom,silver,navy);
+			background-repeat: no-repeat;
+			background-image: linear-gradient(to bottom,lightgray,wheat);
+			background-repeat: no-repeat;	
+			background-size: 100% 180%;
+		}
+		.container
+		{
+			display: inline-block;
+			border: 3px solid black;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			padding-left: 50px;
+			padding-right: 50px;
+			background-image: linear-gradient(to bottom,silver,darksalmon);
+			background-repeat: no-repeat;
+		}
+		hr
+		{
+			border: 2px solid black;
+		}
+		.leftmargin
+		{
+			text-align: left;
+		}
+		label
+		{
+			font-weight: bold;
+			font-size: 20px;
+		}
+		input
+		{
+			height: 25px;
+			border: 3px solid black;
+			font-size: 15px
+		}
+		select
+		{
+			height: 25px;
+			border: 3px solid black;
+			font-size: 15px
+		}
+		button
+		{
+			background-color: grey;
+			color: white;
+			font-size: 20px;
+			padding: 10px;
+			font-weight: bold;
+		}
+		.cen
+		{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Guide Registration</h1>
+		<hr><br>
+		<div class="leftmargin">
+			<form>
+		        <label>Full Name : </label>   
+		        <input type="text" name="fullname" size="33" placeholder="Enter your full name" required>
+		        <br><br>
+		        <label for="department">Department : </label>   
+		        <select name="department">
+		        	<option value="cse">Computer Science and Engineering</option>
+		        	<option value="it">Information Technology</option>
+		        	<option value="ce">Civil Engineering</option>
+		        	<option value="me">Mechanical Engineering</option>
+		        	<option value="ele">Electrical Engineering</option>
+		        	<option value="ene">Electronics Engineering</option>
+		        </select>
+		        <br><br>
+		        <label>Email-Id : </label>
+		        <input type="email" name="email" size="34" placeholder="Enter your email-id" name="email" required>
+		        <br><br>
+		        <label>Mobile No. : </label>
+		        <input type="text" name="mbno" size="32" placeholder="Enter your mobile no." name="mbno" required>
+		        <br><br>
+		        <div class="cen">
+		        	<button type="submit">Register</button>
+		        </div>
+		        <br><br>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

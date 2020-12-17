@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	}
+	.wrapper{
+		width: 1536px;
+	}
+	.article{
+		text-align: center;
+	}
+	header{
+			background-image:linear-gradient(to bottom,#E6E6FA,#FFB6C1);
+			height: 100vh;
+			-webkit-background-size:cover;
+			background-size: cover;
+			background-position: center center;
+			position: absolute;
+		}
+	.nav-area{
+			margin-top: 100px;
+			float: right;
+			
+			list-style: none;
+		}
+		.nav-area li{
+			display: inline-block;
+		}
+		.nav-area li a{
+			color: black;
+			transition: background-color .5s;
+			text-decoration: none;
+			padding: 10px 10px;
+			font-family: inherit;
+			font-size: 25px;
+		}
+		.nav-area li a:hover {
+			background-color: grey;
+			
+		}
+

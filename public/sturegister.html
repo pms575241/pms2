@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Student Registration</title>
+	<style>
+		body
+		{
+			background-image: linear-gradient(to bottom,#E6E6FA,#FFB6C1);
+			background-repeat: no-repeat;
+		}
+		.container
+		{
+			display: inline-block;
+			border: 3px solid black;
+			margin-left: 500px;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			padding-left: 50px;
+			padding-right: 50px;
+			background-image: linear-gradient(to bottom,silver,darksalmon);
+			background-repeat: no-repeat;
+		}
+		hr
+		{
+			border: 2px solid black;
+		}
+		.leftmargin
+		{
+			text-align: left;
+		}
+		label
+		{
+			font-weight: bold;
+			font-size: 20px;
+			text-align: left;
+		}
+		input
+		{
+			height: 25px;
+			border: 3px solid black;
+			font-size: 15px
+		}
+		select
+		{
+			height: 25px;
+			border: 3px solid black;
+			font-size: 15px;
+		}
+		button
+		{
+			background-color: grey;
+			color: white;
+			font-size: 20px;
+			padding: 10px;
+			font-weight: bold;
+		}
+		.cen
+		{
+			text-align: center;
+		}	
+		.cen button:hover{
+			background-color: black;
+		}
+		.nav-area{
+			margin-top: 100px;
+			float: right;
+			margin-right: 200px;
+			list-style: none;
+		}
+		.nav-area li{
+			display: inline-block;
+		}
+		.nav-area li a{
+			color: black;
+			transition: background-color .5s;
+			text-decoration: none;
+			padding: 10px 10px;
+			font-family: inherit;
+			font-size: 25px;
+		}
+		.nav-area li a:hover {
+			background-color: grey;
+			
+		}
+	</style>
+</head>
+<body>
+		<div style="margin-top: 20px; margin-left: 20px; float: left;">
+			<h1 style="font-size:40px;"><b>Project Management System</b></h1>
+			<h3 style="font-size: 25px;"><b>Create | Upload | Approve</b></h3>
+		</div>
+		<ul class="nav-area">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contactus.html">Contact</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	<div class="container">
+		<h1>Student Registration</h1>
+		<hr><br>
+		<div class="leftmargin">
+			<form>
+				<label>Team Name : </label>   
+		        <input type="text" name="username" size="33" placeholder="Enter your team name" required>
+		        <br><br>
+		        <label>Password : </label>   
+		        <input type="password" name="password" size="35" placeholder="Set your password" required>
+		        <br><br>
+		        <label>Full Name : </label>   
+		        <input type="text" name="fullname" size="34" placeholder="Enter your full name" required>
+		        <br><br>
+		        <label>PRN : </label>   
+		        <input type="text" name="prn" size="41" placeholder="Enter your PRN" required>
+		        <br><br>
+		        <label for="department">Department : </label>   
+		        <select name="department">
+		        	<option value="cse">Computer Science and Engineering</option>
+		        	<option value="it">Information Technology</option>
+		        	<option value="ce">Civil Engineering</option>
+		        	<option value="me">Mechanical Engineering</option>
+		        	<option value="ele">Electrical Engineering</option>
+		        	<option value="ene">Electronics Engineering</option>
+		        </select>
+		        <br><br>
+		        <label for="year">Year of study : </label>
+		        <select name="year">
+		        	<option value="sy">SY</option>
+		        	<option value="ty">TY</option>
+		        	<option value="btech">B.Tech</option>
+		        	<option value="mtech">M.Tech</option>
+		        </select>
+		        <br><br>
+		        <label>Email-Id : </label>
+		        <input type="email" name="email" size="36" placeholder="Enter your email-id" name="email" required>
+		        <br><br>
+		        <label>Mobile No. : </label>
+		        <input type="text" name="mbno" size="33" placeholder="Enter your mobile no." name="mbno" required>
+		        <br><br>
+		        <div class="cen">
+		        	<button type="submit">Register</button>
+		        </div>
+		        
+		        <h2>already have an account ?</h2>
+		        
+		        <div class="cen">
+		        	<button onclick="document.location='stulogin.html'">Login</button>
+		        </div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
